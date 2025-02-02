@@ -9,28 +9,35 @@
  */
 {
   "sections": {
-    "multicolumn": {
-      "type": "multicolumn",
-      "disabled": true,
+    "hero": {
+      "type": "slideshow",
+      "settings": {}
+    },
+    "featured_products": {
+      "type": "featured-collection",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Featured Products",
+        "collection": "frontpage"
       }
+    },
+    "about_section": {
+      "type": "rich-text",
+      "settings": {}
+    },
+    "newsletter_signup": {
+      "type": "newsletter",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
     }
   },
   "order": [
-    "multicolumn"
+    "hero",
+    "featured_products",
+    "about_section",
+    "newsletter_signup",
+    "footer"
   ]
 }
